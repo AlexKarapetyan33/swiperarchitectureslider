@@ -1,10 +1,10 @@
-import './App.css'
+import '../app/style/style.css'
 
 export function App() {
 
   return (
     <>
-      
+       
     </>
   )
 }
