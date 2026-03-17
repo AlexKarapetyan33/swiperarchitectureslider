@@ -1,0 +1,25 @@
+.slider{
+    border: 2px solid lightblue;
+
+}
+
+.swiperslide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &>img{
+        width: 300px;
+        height: 450px;
+    }
+    &>button{
+        width: 100px;
+        height: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 1px solid lightblue;
+        background-color: lightblue;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}

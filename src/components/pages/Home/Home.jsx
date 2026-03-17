@@ -1,9 +1,9 @@
 import { Slider } from "../../organisms/Slider/Slider"
 
-export const Home = () => {
+export const Home = ({products}) => {
   return (
-    <div>
-      <Slider />
-    </div>
+    <>
+        <Slider products={products}/>
+    </>
   )
 }
