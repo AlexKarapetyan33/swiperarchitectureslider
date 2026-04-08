@@ -22,7 +22,7 @@ export const Slider = ({products}) => {
         products.map((prod) => {
             return <SwiperSlide className={style.swiperslide}>
                 <img src={prod.image} alt="" />
-                <button>Wuiev Product</button>
+                <button>View Product</button>
             </SwiperSlide>
         })
       }

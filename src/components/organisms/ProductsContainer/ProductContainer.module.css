@@ -1,0 +1,27 @@
+.productcard{
+    width: 400px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid lightblue;
+    background-color: lightblue;
+    font-family: arial;
+    border-radius: 10px;
+    margin-top: 30px;
+    &>button{
+        background-color: aqua;
+        border: 1px solid aqua;
+        margin-top: 10px;
+        height: 35px;
+        width: 100px;
+        border-radius: 10px;
+        color: rgb(28, 28, 28);
+        cursor: pointer;
+    }
+    &>img{
+        width: 300px;
+        height: 400px;
+    }
+}

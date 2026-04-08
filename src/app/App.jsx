@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
 import { Layout } from '../components/templates/Layout/Layout'
-import { Home, Products } from '../components/pages'
+import { Home, Products, Product } from '../components/pages'
 import '../app/style/style.css'
 
 export const App = ({products}) => {
@@ -10,6 +10,7 @@ export const App = ({products}) => {
           <Route path='/' element={<Layout/>}>
               <Route index element={<Home products={products}/> }/>
               <Route path='/products' element={<Products products={products}/>}/>
+              <Route path='/products/:id' element={<Product />}/>
           </Route>
         </Routes>
     </>
