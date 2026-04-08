@@ -18,14 +18,14 @@ export const Slider = ({products}) => {
       scrollbar={{ draggable: true }}
       onSlideChange={() => console.log('slide change')}
     >
-      {
+      {/* {
         products.map((prod) => {
             return <SwiperSlide className={style.swiperslide}>
                 <img src={prod.image} alt="" />
                 <button>View Product</button>
             </SwiperSlide>
         })
-      }
+      } */}
       
       ...
     </Swiper>

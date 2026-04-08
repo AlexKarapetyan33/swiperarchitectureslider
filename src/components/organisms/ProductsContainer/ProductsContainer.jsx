@@ -1,14 +1,26 @@
+import { createContext, useContext } from "react"
 import { ProductCard } from "../../molecules/ProductCard/ProductCard"
-import style from './ProductContainer.module.css'
+import { MyContext } from "../../pages/Products/Products"
 
-export const ProductsContainer = ({products}) => {
+export const NewContext = createContext(null)
+
+export const ProductsContainer = () => {
+
+  const products = useContext(MyContext)
+  console.log(products)
+
+
   return (
     <>
+
         {
-            products.map((product) => {
-                return <div className={style.productcard} key={product.id}><ProductCard product={product}/></div>
-            })
+          products.map((product) => {
+            return <NewContext.Provider value={product}>
+              <ProductCard />
+              </NewContext.Provider>
+          })
         }
+
     </>
   )
 }
